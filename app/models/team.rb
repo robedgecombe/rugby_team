@@ -3,7 +3,7 @@ class Team < ActiveRecord::Base
   validates :players, length: { is: 15 }
 end
 
-def players
-  players.length == 15
-end
+# def players
+#   players.length == 15
+# end
 

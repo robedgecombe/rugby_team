@@ -6,8 +6,8 @@ class TeamsController < ApplicationController
     @team1 = Team.first.name
   end
 
-  def show_player
-    @player = Player.find(params[:id])
-  end
+  # def show_player
+  #   @player = Player.find(params[:id])
+  # end
 
 end
