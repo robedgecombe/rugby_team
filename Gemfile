@@ -28,6 +28,7 @@ gem 'spring',        group: :development
 
 group :test, :development  do
   gem 'rspec-rails'
+  gem 'faker'
 end
 
 

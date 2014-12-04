@@ -1,0 +1,17 @@
+<h1>and here is the team of the moment</h1>
+
+<h2><%= @team1 %></h2>
+<ul id="team_1">
+  <% @players.each do  |player| %>
+    <li>
+      name: <strong><%= player.name %></strong>
+      position: <%= player.position %>
+      age: <%= player.age %>
+      how fast is this guy on a scale of one to ten: <%= player.power %>
+      what about power, how many of your fingers could he break in one go: <%= player.power %>
+      <br />
+
+
+    </li>
+  <% end %>
+  </ul>
