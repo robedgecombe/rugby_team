@@ -30,5 +30,15 @@ RSpec.describe Team, :type => :model do
       end
     expect(next_team.player_count).to be false
     end
+
+    it "will be valid if there are fifteen players" do
+      third_team = Team.create(name: "All Blacks")
+      15.times do
+        third_team.players.create(
+          name: "Some guy",
+          position: "he can play anywhere")
+      end
+    expect(third_team.player_count).to be true
+    end
   end
 end
