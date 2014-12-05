@@ -11,16 +11,16 @@ Player.destroy_all
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+['All Blacks', 'Springboks'].each do |team_name|
+  team = Team.create(name: team_name)
 
-all_blacks = Team.create(name: 'All Blacks')
-
-15.times do
-  Player.create(
-    name: "#{Faker::Name.name}",
-    position: "#{Faker::Lorem.word}",
-    team: all_blacks,
-    age: rand(20..33),
-    speed: rand(4..9),
-    power: rand(4..9)
+  15.times do
+    team.players.create(
+      name: "#{Faker::Name.name}",
+      position: "#{Faker::Lorem.word}",
+      age: rand(20..33),
+      speed: rand(4..9),
+      power: rand(4..9)
     )
+  end
 end

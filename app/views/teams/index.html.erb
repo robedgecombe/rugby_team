@@ -1,17 +1,31 @@
-<h1>and here is the team of the moment</h1>
+<h1>and here are the teams</h1>
 
 <h2><%= @team1 %></h2>
 <ul id="team_1">
-  <% @players.each do  |player| %>
+  <% @players1.each do  |player| %>
     <li>
       name: <strong><%= player.name %></strong>
       position: <%= player.position %>
       age: <%= player.age %>
-      how fast is this guy on a scale of one to ten: <%= player.power %>
+      how fast is this guy on a scale of one to ten: <%= player.speed %>
       what about power, how many of your fingers could he break in one go: <%= player.power %>
       <br />
 
-
     </li>
+  <% end %>
+  </ul>
+
+<h2><%= @team2 %></h2>
+<ul id="team_2">
+  <% @players2.each do  |player| %>
+    <li>
+      name: <strong><%= player.name %></strong>
+      position: <%= player.position %>
+      age: <%= player.age %>
+      how fast is this guy on a scale of one to ten: <%= player.speed %>
+      what about power, how many of your fingers could he break in one go: <%= player.power %>
+      <br />
+
+     </li>
   <% end %>
   </ul>

@@ -6,14 +6,13 @@ RSpec.describe TeamsController, :type => :controller do
 
 
     describe "response" do
-      before { get :index }
-      all_blacks = Team.new
-      player = Player.new(name: "Jeff Wilson", position: "wing")
 
       it "returns an HTTP ok status" do
+        all_blacks = Team.create
+        player = Player.create(name: "Jeff Wilson", position: "wing")
+        get :index
         expect(response).to have_http_status(:ok)
       end
-
     end
   end
 end

@@ -1,9 +1,11 @@
 class Team < ActiveRecord::Base
   has_many :players
-  validates :players, length: { is: 15 }
-end
+  validate :player_count
 
-# def players
-#   players.length == 15
-# end
+
+  def player_count
+    players.length == 15
+  end
+
+end
 
