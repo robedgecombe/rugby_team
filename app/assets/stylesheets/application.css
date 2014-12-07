@@ -2,25 +2,67 @@
 body { 
 	background-color: black;
 	color: white;
+	font-family: avenir;
+	text-align: center;
 }
 
-#team_names {
+.container {
+/*	background-color: red;*/
+	width: 100%;
+	color: purple;
+}
+
+.team_names {
 	background-color: orange;
 	color: blue;
 	table-layout: fixed;
+	width: 50%;
+	margin-top: 0;
 }
 
 table#yep {
 	color: grey;
+	position: relative;
+/*	float: left;*/
 	width: 100%;
 }
 
-#player_names {
+table#yep th {
+/*	color: brown;*/
+	text-align: right;
+	float: left;
+	padding: top 0;
 	background-color: green;
+	width: 100%;
+}
+
+table#yep tr {
+	float: left;
+	position: relative;
+}
+
+table#yep td{
+	color: grey;
+	text-align: left;
+	padding-top: 20px;
+}
+
+.player_names {
+	/*background-color: green;*/
+	font-family: avenir;
+	width: 100%;
+	float: left;
 }
 
 table#nup {
-	color: brown;
+	color: blue;
+}
+
+h2 {
+	padding: top 0;
+	margin-top: 0;
+	content: 80x80;
+
 }
 
 /*#team_names {
