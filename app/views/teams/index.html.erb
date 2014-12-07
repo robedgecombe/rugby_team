@@ -1,4 +1,46 @@
 <h1>and here are the teams</h1>
+    
+       <div id="team_names">
+      <% @teams.each do |team| %>
+        <table id="yep">
+          </div>
+          <tr>
+          <td>  
+<h2><%=  team.name %></h2>
+        </td>
+        </tr>
+        </table>
+     
+
+<table id="nup"
+
+     <h4><% @men.each do |guy| %>
+      <td>
+      <div id="player_names">
+         <% if (guy.id - 1) / 15 + 1 == team.id %>
+              <% if (guy.id) % 15 == 0 %>
+                <%= '15-' %>
+                <%= guy.name %>
+              <% else %>
+                <%= (guy.id) % 15 %>-
+                <%= guy.name  %>
+              <% end %>
+            <br>
+
+          <% end %>
+        <% end %>
+              </td>
+        </table>
+      
+      <br>
+      <% end %></h4>
+        </div>
+
+
+
+
+
+<p>ok cool that is fine</p>
 
 <h2><%= @team1 %></h2>
 <ul id="team_1">
@@ -29,3 +71,4 @@
      </li>
   <% end %>
   </ul>
+
