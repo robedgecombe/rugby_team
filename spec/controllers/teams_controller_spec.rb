@@ -7,12 +7,23 @@ RSpec.describe TeamsController, :type => :controller do
 
     describe "response" do
 
-      # it "returns an HTTP ok status" do
-      #   all_blacks = Team.create
-      #   player = Player.create(name: "Jeff Wilson", position: "wing")
-      #   get :index
-      #   expect(response).to have_http_status(:ok)
-      # end
+      it "returns an HTTP ok status" do
+      team1 = Team.create(name: "All Blacks")
+      15.times do
+        team1.players.create(
+          name: "Some guy",
+          position: "he can play anywhere")
+      end
+
+      team2 = Team.create(name: "Springboks")
+      15.times do
+        team2.players.create(
+          name: "Some other guy",
+          position: "he can't really play")
+      end
+        get :index
+        expect(response).to have_http_status(:ok)
+      end
     end
   end
 end
