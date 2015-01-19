@@ -1,3 +1,3 @@
-a small app which I did not develop, purely to help me get familiar with rails and how to build an app. it doesn't do anything
+a small app which I did not develop beyond the initial stages, it was purely to help me get familiar with rails and how to build an app. it doesn't do anything
 
 
